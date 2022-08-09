@@ -1,26 +1,32 @@
 export const theme = {
     colors: {
-        primaryDarkShade: '#0c192c',
+        primaryDarkShade: '#08111e',
         primaryMediumShade: '#15253f',
         primaryLightShade: '#192f50',
 
         secondaryDarkShade: '#396F80',
         secondaryMediumShade: '#5DC8E8',
+
         secondaryLightShade: '#72deff',
-        secondaryLightNeon: '#38F0FF',
+        secondaryLightTransparent: 'rgba(142, 219, 251, 0.8)',
+
+        secondaryLightNeon: '#00F9FF',
+        secondaryTransparent: 'rgba(98, 147, 164, 0.3)',
 
         tertiaryDarkShade: '#000',
         tertiaryMediumShade: '#888888',
         tertiaryLightShade: '#fff',
 
-        complementary: '#CA59FF',
+        complementary: '#A84DFF',
     },
 
     typography: {
-        mainFont: '"Exo", "Red Hat Display", sans-serif',
+        mainFont: '"Raleway", sans-serif',
         lineHeight: '1.6',
+        lightWeight: '200',
         regularWeight: '400',
-        boldWeight: 'bold',
+        boldWeight: '700',
+        blackWeight: '900',
         fontSize: {
             root: '62.5%', /* 1rem = 10px */
             body: '1.6rem',
