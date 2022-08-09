@@ -70,11 +70,13 @@ export const GlobalStyles = createGlobalStyle`
 		font-weight: ${({ theme }) => theme.typography.regularWeight};
 		color: ${({ theme }) => theme.colors.secondaryLightNeon};
 		-webkit-font-smoothing: antialiased;
+		background-color: ${({ theme }) => theme.colors.primaryDarkShade};
 	}
 
 	h1 {
 		font-size: ${({ theme }) => theme.typography.fontSize.h1};
-		font-weight: ${({ theme }) => theme.typography.boldWeight};
+		font-weight: ${({ theme }) => theme.typography.blackWeight};
+		color: ${({ theme }) => theme.colors.tertiaryLightShade};
 	}
 
 	h2 {
@@ -148,6 +150,13 @@ export const GlobalStyles = createGlobalStyle`
 	ol li {
 		font-size: ${({ theme }) => theme.typography.fontSize.orderedListItem};
 		list-style: decimal inside;
+	}
+
+	button {
+		font-family: ${({ theme }) => theme.typography.mainFont};
+		font-size: ${({ theme }) => theme.typography.fontSize.body};
+		line-height: ${({ theme }) => theme.typography.lineHeight};
+		font-weight: ${({ theme }) => theme.typography.regularWeight};
 	}
 
 	/*** End of Styling global components ***/
