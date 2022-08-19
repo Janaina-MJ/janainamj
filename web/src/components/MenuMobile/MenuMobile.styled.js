@@ -10,7 +10,7 @@ export const StyledMenuMobile = styled.div`
         left: 25px;
         width: 25px;
         height: 25px;
-        z-index: 2;
+        z-index: 3;
     }
 
     .hamburger:after, .hamburger:before {
@@ -39,6 +39,7 @@ export const StyledMenuMobile = styled.div`
         top: 0;
         left: -100vw;
         transition: 0.4s;
+        z-index: 2;
     }
 
     .showMenu{
