@@ -33,7 +33,7 @@ export const StyledPixel = styled.span`
     width: 6px;
     height: 6px;
     background-color: ${({ theme }) => theme.colors.secondaryLightShade};
-    opacity: 0.2;
+    opacity: 0.3;
     box-shadow: 0 0 19px 7px ${({ theme }) => theme.colors.secondaryMediumShade};
     animation: up 15s linear infinite;
     animation-duration: calc(150s / ${({ speed }) => speed });
@@ -49,8 +49,7 @@ export const StyledPixel = styled.span`
         }
 
         100% {
-            transform: translateY(-10vh) scale(3);
-            
+            transform: translateY(-10vh) scale(3);   
         }
     }
 `
