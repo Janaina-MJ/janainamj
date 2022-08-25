@@ -74,10 +74,21 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	h1 {
-		font-size: ${({ theme }) => theme.typography.fontSize.h1};
+		font-size: ${({ theme }) => theme.typography.fontSize.h1Small};
 		font-weight: ${({ theme }) => theme.typography.blackWeight};
 		color: ${({ theme }) => theme.colors.tertiaryLightShade};
+
+		//Responsive-mode for tablet devices:
+		@media(min-width: 505px) and (max-width: 872px) {
+		font-size: ${({ theme }) => theme.typography.fontSize.h1Medium};
+		}
+
+		//Responsive-mode for desktop devices:
+		@media(min-width: 873px) {
+			font-size: ${({ theme }) => theme.typography.fontSize.h1Large};
+		}
 	}
+
 
 	h2 {
 		font-size: ${({ theme }) => theme.typography.fontSize.h2};

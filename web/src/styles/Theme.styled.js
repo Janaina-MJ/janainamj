@@ -31,8 +31,10 @@ export const theme = {
         fontSize: {
             root: '62.5%', /* 1rem = 10px */
             body: '1.6rem',
-            h1: '4.88rem',
-            h2: '3.90rem',
+            h1Large: '9rem',
+            h1Medium: '6rem',
+            h1Small: '3.55rem',
+            h2: '3.35rem',
             h3: '3.12rem',
             h4: '2.50rem',
             h5: '2rem',
