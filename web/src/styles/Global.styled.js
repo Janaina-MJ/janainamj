@@ -68,7 +68,7 @@ export const GlobalStyles = createGlobalStyle`
 		font-size: ${({ theme }) => theme.typography.fontSize.body};
 		line-height: ${({ theme }) => theme.typography.lineHeight};
 		font-weight: ${({ theme }) => theme.typography.regularWeight};
-		color: ${({ theme }) => theme.colors.secondaryLightNeon};
+		color: ${({ theme }) => theme.colors.tertiaryLightShade};
 		-webkit-font-smoothing: antialiased;
 		background-color: ${({ theme }) => theme.colors.primaryDarkShade};
 	}
@@ -118,13 +118,15 @@ export const GlobalStyles = createGlobalStyle`
 
 	p {
 		font-size: ${({ theme }) => theme.typography.fontSize.paragraph};
+		text-align: justify;
+		margin-bottom: 16px;
 	}
 
 	a{
 		font-size: ${({ theme }) => theme.typography.fontSize.anchor};
 		font-weight: ${({ theme }) => theme.typography.boldWeight};
 		text-decoration: none;
-		color: ${({ theme }) => theme.colors.complementary};
+		color: ${({ theme }) => theme.colors.secondaryLightNeon};
 	}
 
 	em{
