@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContainer = styled.div`
     width: 100vw;
     height: 100vh;
-    overflow: auto;
+    overflow: scroll;
     margin: auto;
 
     header {
@@ -15,23 +15,22 @@ export const StyledContainer = styled.div`
         max-width: 100%;
         height: 100vh;
         padding: 25px;
-
     }
 
-    .home {
-        
+    .main-sections {
+        margin-bottom: 150px;
     }
 
-    //Responsive-mode for desktop devices:
+    // RESPONSIVE MODE FOR DESKTOP DEVICES:
     @media(min-width: 775px) {
 
         header {
-            width: 15vw;
+            width: 12vw;
         }
 
         main {
             width: 84vw;
-            margin-left: 16vw;
+            margin-left: 13vw;
         }
     }
 `
