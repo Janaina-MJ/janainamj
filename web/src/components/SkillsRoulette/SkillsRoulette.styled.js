@@ -12,7 +12,7 @@ export const StyledSkillsRoulette = styled.div`
         transform-style: preserve-3d;
         transform: rotate(-20deg);
         position: absolute;
-        top: 165px;
+        top: 157px;
         left: 140px;
     }
 
