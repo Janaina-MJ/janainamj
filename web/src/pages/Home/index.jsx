@@ -6,6 +6,7 @@ import { StyledContainer } from './Home.styled';
 import { Menu } from '../../components/Menu';
 import { MenuMobile } from '../../components/MenuMobile';
 import { Introduction } from '../../components/Introduction';
+import { About } from '../../components/About';
 
 export function Home() {
   return (
@@ -22,23 +23,23 @@ export function Home() {
           </header>
 
           <main>
-            <section className='home'>
+            <section className='main-sections'>
               <Introduction />
             </section>
 
-            <section className='about'>
+            <section className='main-sections'>
+              <About />
+            </section>
+
+            <section className='main-sections'>
 
             </section>
 
-            <section className='projects'>
+            <section className='main-sections'>
 
             </section>
 
-            <section className='skills'>
-
-            </section>
-
-            <section className='contact'>
+            <section className='main-sections'>
             </section>
           </main>
           
