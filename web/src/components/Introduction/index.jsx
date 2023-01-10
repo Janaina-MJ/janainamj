@@ -11,11 +11,11 @@ export function Introduction() {
 
         <StyledIntroduction >
             <h1 className='title-container' label="HI! I'm Jana, web developer"> 
-                <span>Hi! I'm </span>
-                <img src={logoBw} alt='J' /><span>ana,</span> 
+                <span>Hi! I'm </span><img src={logoBw} alt='J' /><span>ana,</span> 
                 <br/>
                 <span>web developer.</span>
             </h1>
+            <p>Exploring the world of tech one byte at a time.</p>
             <StyledKeyButton>LinkedIn</StyledKeyButton>
         </StyledIntroduction>
     )
