@@ -2,23 +2,30 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.article`
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
 
     .profile {
-        width: 55%;
-        min-height: 550px;
+
     }
 
     .skills-animation {
-        width: 43%;
-        min-width: 412px;
-        min-height: 550px;
+        height: 450px;
+        min-width: 310px;
     }
+
 
     h2 {
         margin: 50px 0;
+    }
+
+    //Responsive-mode for medium and desktop devices:
+    @media(min-width: 640px) {
+
+        flex-direction: row;
+        
+        .profile {
+            padding-right: 25px;
+        }
     }
 `
