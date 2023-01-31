@@ -1,32 +1,36 @@
 import styled from "styled-components";
-import gotaplan from '../../assets/gotaplan.jpeg';
+import weather from '../../assets/weather.jpeg';
 import tryIt from '../../assets/tryIt.jpeg';
 
 export const StyledProjects = styled.div`
     
     min-height: 800px;
     width: 100%;
+    margin-bottom: 120px;
 
     .featured-project {
         min-height: 650px;
         width: 100%;
+        margin-bottom: 60px;
     }
 
     .project-view {
         width: 100%;
         background-color: ${({ theme }) => theme.colors.secondaryTransparent};
         border-radius: 15px;
-        padding: 10px;
+        padding: 20px 10px;
         margin-top: 20px;
     }
 
     .featured-project-img {
         width: 95%;
-        height: 180px;
-        margin: 15px auto;
+        min-height: 190px;
+        margin: 20px auto;
         border-radius: 5px;
-        background-image: url(${gotaplan});
-        animation: light-up 6s ease-in-out infinite alternate;
+        background-image: url(${weather});
+        background-size: cover;
+        background-position: center;
+        //animation: light-up 3s linear infinite ;
     }
 
     @keyframes light-up {
@@ -42,22 +46,29 @@ export const StyledProjects = styled.div`
     }
 
     ul li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 		list-style: none;
         margin: 2.5px 5px;
         min-width: 120px;
         height: 30px;
         flex-grow: 1;
-        background-color: ${({ theme }) => theme.colors.complementary};
+        background-color: ${({ theme }) => theme.colors.complementaryTransparent};
+        transition: background-color 0.2s ease-in-out;
         border-radius: 10px;
 
 	}
 
+    ul li:hover {
+        background-color: ${({ theme }) => theme.colors.complementary};
+    }
+
     ul li a {
         color: ${({ theme }) => theme.colors.tertiaryLightShade};
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 	}
 
     .mobile-container {
@@ -111,6 +122,12 @@ export const StyledProjects = styled.div`
         display: none;
     }
 
+    .projects-portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
      //Responsive-mode for medium devices:
      @media(min-width: 640px) and (max-width: 991px) {
@@ -145,6 +162,7 @@ export const StyledProjects = styled.div`
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 160px;
         }
 
         .project-view {
