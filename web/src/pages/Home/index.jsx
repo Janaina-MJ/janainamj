@@ -7,6 +7,8 @@ import { Menu } from '../../components/Menu';
 import { MenuMobile } from '../../components/MenuMobile';
 import { Introduction } from '../../components/Introduction';
 import { About } from '../../components/About';
+import { Projects } from '../../components/Portfolio';
+import { Skills } from '../../components/Skills';
 
 export function Home() {
   return (
@@ -23,8 +25,12 @@ export function Home() {
           </header>
 
           <main>
-            <section className='main-sections'>
+            <section className='main-sections introduction-section'>
               <Introduction />
+            </section>
+
+            <section className='main-sections'>
+              <Projects />
             </section>
 
             <section className='main-sections'>
@@ -32,11 +38,7 @@ export function Home() {
             </section>
 
             <section className='main-sections'>
-
-            </section>
-
-            <section className='main-sections'>
-
+              <Skills />
             </section>
 
             <section className='main-sections'>

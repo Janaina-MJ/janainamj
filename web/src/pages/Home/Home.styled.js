@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const StyledContainer = styled.div`
     width: 100vw;
     height: 100vh;
-    overflow: scroll;
-    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     header {
         width: auto;
@@ -12,13 +12,19 @@ export const StyledContainer = styled.div`
     }
 
     main {
-        max-width: 100%;
+        width: 100%;
         height: 100vh;
-        padding: 25px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .main-sections {
-        margin-bottom: 150px;
+        height: auto;
+    }
+
+    .introduction-section {
+        height: 90vh;
     }
 
     // RESPONSIVE MODE FOR DESKTOP DEVICES:
@@ -31,6 +37,7 @@ export const StyledContainer = styled.div`
         main {
             width: 84vw;
             margin-left: 13vw;
+            padding: 25px;
         }
     }
 `
