@@ -9,6 +9,7 @@ import { Introduction } from '../../components/Introduction';
 import { About } from '../../components/About';
 import { Projects } from '../../components/Portfolio';
 import { Skills } from '../../components/Skills';
+import { ContactMe } from '../../components/ContactMe';
 
 export function Home() {
   return (
@@ -42,6 +43,7 @@ export function Home() {
             </section>
 
             <section className='main-sections'>
+              <ContactMe />
             </section>
           </main>
           
