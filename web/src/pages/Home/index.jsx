@@ -10,6 +10,7 @@ import { About } from '../../components/About';
 import { Projects } from '../../components/Portfolio';
 import { Skills } from '../../components/Skills';
 import { ContactMe } from '../../components/ContactMe';
+import { Footer } from '../../components/Footer';
 
 export function Home() {
   return (
@@ -46,6 +47,11 @@ export function Home() {
               <ContactMe />
             </section>
           </main>
+
+          <footer>
+            <Footer />
+          </footer>
+          
           
         </StyledContainer>
       </>

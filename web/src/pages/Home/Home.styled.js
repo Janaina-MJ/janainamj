@@ -13,10 +13,16 @@ export const StyledContainer = styled.div`
 
     main {
         width: 100%;
-        height: 100vh;
+        height: auto;
         padding: 10px;
         display: flex;
         flex-direction: column;
+    }
+
+    footer {
+        width: 100%;
+        height: 90px;
+        padding: 10px;
     }
 
     .main-sections {
@@ -35,6 +41,12 @@ export const StyledContainer = styled.div`
         }
 
         main {
+            width: 84vw;
+            margin-left: 13vw;
+            padding: 25px;
+        }
+
+        footer {
             width: 84vw;
             margin-left: 13vw;
             padding: 25px;
