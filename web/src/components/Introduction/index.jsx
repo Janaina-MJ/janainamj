@@ -1,6 +1,5 @@
-import { StyledIntroduction } from './Introduction.styled';
+import { StyledIntroduction, StyledLetter } from './Introduction.styled';
 import logoBw from '../../assets/logoBw.svg';
-import logoColorful from '../../assets/logoColorful.svg';
 import { StyledFlashingUnderscore } from '../FlashingUnderscore/FlashingUnderscore.styled';
 import { StyledKeyButton } from '../../styles/Buttons';
 import { useState, useRef } from 'react';
@@ -11,11 +10,33 @@ export function Introduction() {
 
         <StyledIntroduction >
             <h1 className='title-container' label="HI! I'm Jana, web developer"> 
-                <span>Hi! I'm </span><img src={logoBw} alt='J' /><span>ana,</span> 
+                <StyledLetter speed={22}>H</StyledLetter>
+                <StyledLetter speed={6}>i</StyledLetter>
+                <StyledLetter speed={11} letterSpace={true}>! </StyledLetter>  
+                <StyledLetter speed={4}>I</StyledLetter>
+                <StyledLetter speed={9}>'</StyledLetter>
+                <StyledLetter speed={14} letterSpace={true}>m </StyledLetter>
+                <StyledLetter speed={21}>J</StyledLetter>
+                <StyledLetter speed={5}>a</StyledLetter>
+                <StyledLetter speed={17}>n</StyledLetter>
+                <StyledLetter speed={6}>a</StyledLetter>
+                <StyledLetter speed={15}>,</StyledLetter> 
                 <br/>
-                <span>web developer.</span>
+                <StyledLetter speed={9}>w</StyledLetter>
+                <StyledLetter speed={6}>e</StyledLetter>
+                <StyledLetter speed={11} letterSpace={true}>b </StyledLetter>
+                <StyledLetter speed={26}>d</StyledLetter>
+                <StyledLetter speed={9}>e</StyledLetter>
+                <StyledLetter speed={14}>v</StyledLetter>
+                <StyledLetter speed={5}>e</StyledLetter>
+                <StyledLetter speed={10}>l</StyledLetter>
+                <StyledLetter speed={7}>o</StyledLetter>
+                <StyledLetter speed={17}>p</StyledLetter>
+                <StyledLetter speed={5}>e</StyledLetter>
+                <StyledLetter speed={9}>r</StyledLetter>
+                <StyledLetter speed={14}>.</StyledLetter>
             </h1>
-            <p>Exploring the world of tech one byte at a time.</p>
+            <p className='introduction-phrase'>Exploring the world of tech one byte at a time.</p>
             <StyledKeyButton>LinkedIn</StyledKeyButton>
         </StyledIntroduction>
     )
