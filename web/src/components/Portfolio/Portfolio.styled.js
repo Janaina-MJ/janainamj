@@ -51,7 +51,7 @@ export const StyledProjects = styled.div`
         min-width: 120px;
         height: 30px;
         flex-grow: 1;
-        background-color: ${({ theme }) => theme.colors.complementaryTransparent};
+        background-color: ${({ theme }) => theme.colors.complementarySaturated};
         transition: background-color 0.2s ease-in-out;
         border-radius: 10px;
 
@@ -62,7 +62,7 @@ export const StyledProjects = styled.div`
     }
 
     ul li a {
-        color: ${({ theme }) => theme.colors.tertiaryLightShade};
+        color: ${({ theme }) => theme.colors.primaryDarkShade};
         width: 100%;
         height: 100%;
         display: flex;
@@ -122,6 +122,13 @@ export const StyledProjects = styled.div`
         display: none;
     }
 
+    .projects-briefing {
+        text-align: center;
+        font-style: italic;
+        opacity: 0.7;
+        margin-bottom: 80px;
+    }
+
     .projects-portfolio {
         display: flex;
         flex-direction: row;
@@ -162,7 +169,7 @@ export const StyledProjects = styled.div`
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-bottom: 160px;
+            margin-bottom: 100px;
         }
 
         .project-view {
