@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const StyledSkills = styled.div`
 
-    width: 100%;
+    width: 95%;
     height: auto;
-    margin: 140px 10px 80px;
+    margin: 70px auto 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,17 +12,20 @@ export const StyledSkills = styled.div`
 
     h2 {
         align-self: flex-start;
-        margin: 50px 0 50px 5px;
+        margin: 50px 0 50px 10px;
     }
 
     .skills-brief {
         width: 90%;
+        opacity: 0.9;
+        margin-bottom: 60px;
     }
 
     .skills-container {
-        width: 80%;
+        width: 100%;
         height: auto;
-        margin: 30px 0;
+        min-height: 310px;
+        margin: 30px auto;
         //background-color: ${({ theme }) => theme.colors.secondaryTransparent};
         border-radius: 15px;
         padding: 15px;
@@ -113,8 +116,22 @@ export const StyledSkills = styled.div`
         display: none;
     }
 
+    //Responsive-mode for medium and desktop devices:
+    @media(min-width: 640px) {
+        width: 100%;
+
+        .skills-container {
+            width: 90%;
+        }
+    }
     
 `
+
+
+
+
+
+
 
 export const StyledSkillCard = styled.div`
     width: 100px;
@@ -129,11 +146,11 @@ export const StyledSkillCard = styled.div`
     margin: 20px 10px;
     padding-top: 15px;
     position: relative;
-    animation: up 1s forwards alternate;
+    animation: growing 1s forwards alternate;
     animation-duration: calc(10s / ${({ speed }) => speed });
     
 
-    @keyframes up {
+    @keyframes growing {
         0% {transform: scale(0);}
         100%{transform: scale(1);}
     }
@@ -147,7 +164,7 @@ export const StyledSkillCard = styled.div`
             transform: rotate(0deg);
         }
         50% {
-            transform: rotate(180deg);
+            transform: rotate(1deg);
         }
 
         100% {

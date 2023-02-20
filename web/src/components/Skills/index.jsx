@@ -3,7 +3,7 @@ import { TiHtml5 } from 'react-icons/ti'
 import { IoLogoCss3 } from 'react-icons/io'
 import { SiJavascript, SiBabel, SiStyledcomponents } from 'react-icons/si'
 import { FaReact, FaNode, FaGitAlt, FaSass, FaBookReader, FaPeopleCarry } from 'react-icons/fa'
-import { GiLoveMystery } from 'react-icons/gi'
+import { GiLoveMystery, GiPuzzle } from 'react-icons/gi'
 import { useState } from 'react';
 
 export function Skills() {
@@ -88,6 +88,11 @@ export function Skills() {
                     <StyledSkillCard speed={9} >
                         <FaPeopleCarry className='skill-icon' />
                         <p> team player</p>
+                    </StyledSkillCard>
+
+                    <StyledSkillCard speed={14} >
+                        <GiPuzzle className='skill-icon' />
+                        <p> problem-solving</p>
                     </StyledSkillCard>
                </div>
                 
