@@ -12,13 +12,17 @@ export const theme = {
 
         secondaryLightNeon: '#00F9FF',
         secondaryTransparent: 'rgba(98, 147, 164, 0.3)',
+        secondaryFullColor: 'rgb(34, 45, 51)',
 
-        tertiaryBlack: '#000',
+
+        tertiaryBlack: 'rgba(0, 0, 0, 0.6)',
         tertiaryDarkShade: '#454e50',
         tertiaryMediumShade: '#8a9599',
         tertiaryLightShade: '#f5f5f7',
 
-        complementary: '#A84DFF',
+        complementary: 'rgba(118, 187, 191, 01)',
+        complementarySaturated: 'rgba(118, 208, 208, 1)',
+        complementaryContrast: '#FFB973',
     },
 
     typography: {
