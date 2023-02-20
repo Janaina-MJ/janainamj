@@ -79,12 +79,12 @@ export const GlobalStyles = createGlobalStyle`
 		color: ${({ theme }) => theme.colors.tertiaryLightShade};
 
 		//Responsive-mode for tablet devices:
-		@media(min-width: 505px) and (max-width: 872px) {
+		@media(min-width: 640px) and (max-width: 991px) {
 		font-size: ${({ theme }) => theme.typography.fontSize.h1Medium};
 		}
 
 		//Responsive-mode for desktop devices:
-		@media(min-width: 873px) {
+		@media(min-width: 992px) {
 			font-size: ${({ theme }) => theme.typography.fontSize.h1Large};
 		}
 	}
@@ -93,6 +93,7 @@ export const GlobalStyles = createGlobalStyle`
 	h2 {
 		font-size: ${({ theme }) => theme.typography.fontSize.h2};
 		font-weight: ${({ theme }) => theme.typography.boldWeight};
+		color: ${({ theme }) => theme.colors.tertiaryMediumShade};
 	}
 
 	h3 {
@@ -126,7 +127,12 @@ export const GlobalStyles = createGlobalStyle`
 		font-size: ${({ theme }) => theme.typography.fontSize.anchor};
 		font-weight: ${({ theme }) => theme.typography.boldWeight};
 		text-decoration: none;
-		color: ${({ theme }) => theme.colors.secondaryLightNeon};
+		color: ${({ theme }) => theme.colors.complementaryContrast};
+
+			:hover {
+				opacity: 0.8;
+			}
+		
 	}
 
 	em{
@@ -137,6 +143,7 @@ export const GlobalStyles = createGlobalStyle`
 	strong {
 		font-size: ${({ theme }) => theme.typography.fontSize.strong};
 		font-weight: ${({ theme }) => theme.typography.boldWeight};
+		color: ${({ theme }) => theme.colors.secondaryLightNeon};
 	}
 
 	small {
