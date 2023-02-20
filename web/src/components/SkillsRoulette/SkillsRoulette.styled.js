@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledSkillsRoulette = styled.div`
     position: relative;
-    max-width: 310px;
-    height: 450px;
+    max-width: 280px;
+    height: 380px;
     transform-style: preserve-3d;
     
 
@@ -11,20 +11,20 @@ export const StyledSkillsRoulette = styled.div`
     .roulette-one {
         transform: rotate(-20deg);
         position: absolute;
-        top: 108px;
-        left: 53px;
+        top: 70px;
+        left: 24px;
     }
 
     .roulette-two {
         transform: rotate(20deg);
         position: absolute;
-        top: 242px;
-        left: 106px;
+        top: 191px;
+        left: 66px;
     }
 
     .roulette-three {
         position: absolute;
-        top: 380px;
+        top: 313px;
         left: 8px;
     }
 
@@ -36,7 +36,9 @@ export const StyledSkillsRoulette = styled.div`
     }
 
    
-    
+    .roulette:hover {
+        animation: animation1 3s linear infinite;
+    }
 
     @keyframes animation1 {
         0%{
@@ -63,10 +65,10 @@ export const StyledSkill = styled.span`
         height: 100px;
         text-align: center;
         color: ${({ theme }) => theme.colors.primaryLightShade};
-        font-size: 3.2em;
+        font-size: 2.7em;
         text-transform: uppercase;
         font-weight: bold;
-        -webkit-text-stroke: 2px ${({ theme }) => theme.colors.secondaryLightNeon};
+        -webkit-text-stroke: 2px ${({ theme }) => theme.colors.complementarySaturated};
     }
 
 `
