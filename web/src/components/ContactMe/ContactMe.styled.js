@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContactMe = styled.div`
 
     width: 100%;
-    min-height: 100vh;
+    height: auto;
 
     h2 {
         margin: 50px 0 50px 10px;
@@ -14,12 +14,11 @@ export const StyledContactMe = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 90px;
     }
 
     .form-container {
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .contact-info em {
@@ -34,15 +33,18 @@ export const StyledContactMe = styled.div`
     .form {
         background-color: ${({ theme }) => theme.colors.secondaryTransparent};
         border-radius: 10px;
-        padding: 15px;
+        padding: 25px 15px;
         max-width: 500px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
     }
 
     .field-set {
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
         font-weight: bold;
     }
 
@@ -109,7 +111,7 @@ export const StyledContactMe = styled.div`
     .contact-icon {
         min-width: 30px;
         min-height: 30px;
-        color: ${({ theme }) => theme.colors.secondaryLightNeon};
+        color: ${({ theme }) => theme.colors.complementary};
     }
 
     .contact-description {

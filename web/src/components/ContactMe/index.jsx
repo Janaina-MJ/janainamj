@@ -31,7 +31,7 @@ export const ContactMe = () => {
 
         emailjs.send('service_mcog8yg', 'template_fnmoadf', emailParameters, 'OUCp05SWXVPkHeazD')
         .then(() => {
-            setAlertMessage('Email sent.')
+            setAlertMessage('Email sent')
             alertBox.current.style.left = '0'
             setName('')
             setEmail('')
@@ -92,7 +92,7 @@ export const ContactMe = () => {
                 <div className='form-container'>
                 <form className='form' onSubmit={sendToEmail}>
                         <div className='field-set'>
-                            <label for="name" className='field-title'> Name</label>
+                            <label htmlFor="name" className='field-title'> Name</label>
                             <input 
                                 className='fields' 
                                 type="text" 
@@ -105,7 +105,7 @@ export const ContactMe = () => {
                         </div>
 
                         <div className='field-set'>
-                            <label for="email" className='field-title'>Email</label>
+                            <label htmlFor="email" className='field-title'>Email</label>
                             <input 
                                 className='fields' 
                                 type="email" 
@@ -140,7 +140,7 @@ export const ContactMe = () => {
                                 <button onClick={closeAlert} className='close-custom-alert'>close</button>
                             </div>
                         </div>
-                    </form>
+                </form>
                     
                 </div>
             </div>
