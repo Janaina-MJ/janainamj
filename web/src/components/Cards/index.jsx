@@ -43,7 +43,7 @@ export const Card = ({ projectImgLogo, projectImgMobile, projectName, descriptio
                             <strong>Github repository:</strong> <a href={githubRepo} target='blank' > check the code here! </a> <br/ >
                         </div>
                     </div>
-                    <p>{descriptionOfProject}</p>
+                    <p><em>{descriptionOfProject}</em></p>
                     <ul ref={unorderedTechList} className='mini-tech-stack'> 
                         {technologyList}
                     </ul>

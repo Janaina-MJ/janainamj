@@ -67,6 +67,7 @@ export const StyledCard = styled.div`
         box-shadow: 0 0 25px ${({ theme }) => theme.colors.secondaryLightTransparent};
         display: flex;
         flex-direction: column;
+        position: relative;
    }
 
    .closeButton {
@@ -74,7 +75,9 @@ export const StyledCard = styled.div`
         border-style: none;
         width: 20px;
         height: 20px;
-        align-self: flex-end;
+        position: absolute;
+        top: 8px;
+        right: 8px;
         margin-bottom: 10px;
    }
 
@@ -105,7 +108,7 @@ export const StyledCard = styled.div`
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 10px 0;
+        margin: 10px 0 0;
    }
 
    .mini-tech-stack li {
@@ -125,7 +128,7 @@ export const StyledCard = styled.div`
     }
 
     .mini-tech-stack li a {
-        color: ${({ theme }) => theme.colors.tertiaryLightShade};
+        color: ${({ theme }) => theme.colors.primaryDarkShade};
         width: 100%;
         height: 100%;
         display: flex;
@@ -144,7 +147,7 @@ export const StyledCard = styled.div`
         background-color: ${({ theme }) => theme.colors.secondaryTransparent};
         backdrop-filter: blur(30px);
         z-index: 1;
-        display: flex; //close button adiciona classe display none ao mesmo tempo que a classe diplay flex esta ativa, entao ele nao obedece
+        display: flex;
         justify-content: center;
         align-items: center;
     }
