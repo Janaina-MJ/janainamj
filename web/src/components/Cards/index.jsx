@@ -39,8 +39,8 @@ export const Card = ({ projectImgLogo, projectImgMobile, projectName, descriptio
                         <img className='project-cover' src={projectImgDesktop} alt="" />
                         <div className='project-info' >
                             <h6>{projectName} </h6>
-                            <strong>Deploy:</strong> <a href={deployUrl} target='blank' > check it out! </a> <br />
-                            <strong>Github repository:</strong> <a href={githubRepo} target='blank' > check the code here! </a> <br/ >
+                            <strong>Deploy:</strong> <a href={deployUrl} target='_blank' > check it out! </a> <br />
+                            <strong>Github repository:</strong> <a href={githubRepo} target='_blank' > check the code here! </a> <br/ >
                         </div>
                     </div>
                     <p><em>{descriptionOfProject}</em></p>

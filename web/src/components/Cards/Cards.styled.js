@@ -78,7 +78,6 @@ export const StyledCard = styled.div`
         position: absolute;
         top: 8px;
         right: 8px;
-        margin-bottom: 10px;
    }
 
    .project-container{
@@ -86,6 +85,7 @@ export const StyledCard = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        margin: 13px 0;
    }
 
    .project-cover {

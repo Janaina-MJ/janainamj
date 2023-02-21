@@ -32,6 +32,25 @@ export const StyledIntroduction = styled.div`
         100% { background-position: 0 50%; }
     }
 
+    .linkedin-button {
+        padding: 0;
+    }
+
+    .linkedin-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+        font-weight: inherit;
+        width: 100%;
+        height: 100%;
+
+        :hover {
+            background-color: none;
+            opacity: 1;
+        }
+    }
+
     //Responsive-mode for medium devices:
     @media(min-width: 640px) and (max-width: 991px) {
         .title-container {

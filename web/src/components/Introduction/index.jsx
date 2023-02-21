@@ -34,7 +34,7 @@ export function Introduction() {
                 <StyledLetter speed={14}>.</StyledLetter>
             </h1>
             <p className='introduction-phrase'>Exploring the world of tech one byte at a time.</p>
-            <StyledKeyButton>LinkedIn</StyledKeyButton>
+            <StyledKeyButton className='linkedin-button'><a href="https://www.linkedin.com/in/janaina-mj/" target='_blank'>LinkedIn</a></StyledKeyButton>
         </StyledIntroduction>
     )
 }
