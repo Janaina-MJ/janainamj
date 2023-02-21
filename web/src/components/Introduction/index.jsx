@@ -1,8 +1,5 @@
 import { StyledIntroduction, StyledLetter } from './Introduction.styled';
-import logoBw from '../../assets/logoBw.svg';
-import { StyledFlashingUnderscore } from '../FlashingUnderscore/FlashingUnderscore.styled';
 import { StyledKeyButton } from '../../styles/Buttons';
-import { useState, useRef } from 'react';
 
 export function Introduction() {
      
