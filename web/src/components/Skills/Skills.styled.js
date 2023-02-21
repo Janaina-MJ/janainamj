@@ -4,7 +4,7 @@ export const StyledSkills = styled.div`
 
     width: 95%;
     height: auto;
-    margin: 70px auto 40px;
+    margin: 0 auto 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
