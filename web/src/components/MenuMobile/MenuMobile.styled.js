@@ -54,9 +54,10 @@ export const StyledMenuMobile = styled.div`
         padding: 20px 0 15px 0;
     }
 
-    img {
+    .logo {
         width: auto;
-        height: 25px;
+        height: 60px;
+        margin-bottom: 30px;
     }
 
     nav{
@@ -76,7 +77,7 @@ export const StyledMenuMobile = styled.div`
 
     li {
         width: 100%;
-        height: 57px;
+        height: auto;
         list-style: none;
         padding: 15px 0 15px 0;
         border-bottom: 1px solid ${({ theme }) => theme.colors.primaryMediumShade};
@@ -90,12 +91,11 @@ export const StyledMenuMobile = styled.div`
         align-items: center;
 
         color: ${({ theme }) => theme.colors.tertiaryLightShade};
-        opacity: 0.5;
-        font-weight: 700;
+        opacity: 1;
+        font-weight: lighter;
 
         :active {
             letter-spacing: 0.3rem;
-            opacity: 1;
         }
     }
 

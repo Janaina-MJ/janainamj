@@ -9,7 +9,7 @@ export const StyledMenu = styled.div`
         position: fixed;
         top: 0;
         left: 0;
-        width: 15vw;
+        width: 12vw;
         height: 100%;
         border-right: 1px solid ${({ theme }) => theme.colors.primaryMediumShade};;
 
@@ -25,25 +25,18 @@ export const StyledMenu = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-
-            color: ${({ theme }) => theme.colors.tertiaryLightShade};
-            opacity: 0.5;
-            font-weight: 700;
-            transition: 1s;
-
-            :hover {
-                letter-spacing: 0.3rem;
-                opacity: 1;
-            }
-
-            :hover {
-                transform: rotate(-360deg);
-            }
         }
 
         .logo img {
             width: auto;
-            height: 75px;
+            height: 80px;
+            opacity: 0.5;
+            transition: 0.2s;
+
+            :hover {
+                transform: scale(1.3);
+                opacity: 0.7;
+            }
         }
 
         nav {
@@ -65,8 +58,12 @@ export const StyledMenu = styled.div`
             width: 100%;
             height: 57px;
             list-style: none;
-            padding: 15px 0 15px 0;
             border-bottom: 1px solid ${({ theme }) => theme.colors.primaryMediumShade};
+
+            :hover {
+                letter-spacing: 0.3rem;
+                opacity: 1;
+            }
         }
 
         .menu-item {
@@ -77,14 +74,11 @@ export const StyledMenu = styled.div`
             align-items: center;
 
             color: ${({ theme }) => theme.colors.tertiaryLightShade};
-            opacity: 0.5;
-            font-weight: 700;
+            opacity: 0.9;
+            font-weight: lighter;
             transition: 1s;
 
-            :hover {
-                letter-spacing: 0.3rem;
-                opacity: 1;
-            }
+            
         }
 
         .social-media {
@@ -92,12 +86,20 @@ export const StyledMenu = styled.div`
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            padding: 15px 0;
         }
 
         .social-media a {
             display: block;
             width: auto;
             padding: 0 15px;
+        }
+
+        .media-icon {
+            opacity: 0.5;
+        }
+        .media-icon:hover {
+            opacity: 1;
         }
     }
 `

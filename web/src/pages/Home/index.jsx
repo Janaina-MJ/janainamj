@@ -27,23 +27,23 @@ export function Home() {
           </header>
 
           <main>
-            <section className='main-sections introduction-section'>
+            <section id='introduction' className='main-sections introduction-section'>
               <Introduction />
             </section>
 
-            <section className='main-sections'>
+            <section id='projects' className='main-sections'>
               <Projects />
             </section>
 
-            <section className='main-sections'>
+            <section id='about' className='main-sections'>
               <About />
             </section>
 
-            <section className='main-sections'>
+            <section id='skills' className='main-sections'>
               <Skills />
             </section>
 
-            <section className='main-sections'>
+            <section id='contact' className='main-sections'>
               <ContactMe />
             </section>
           </main>
