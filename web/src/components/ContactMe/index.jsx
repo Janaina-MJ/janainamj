@@ -12,48 +12,49 @@ export const ContactMe = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const emailAddressElement = useRef();
-    const alertBox = useRef();
+    const alertSendEmail = useRef();
+    const alertCopyEmail = useRef();
     const [alertMessage, setAlertMessage] = useState('');
 
-    function sendToEmail(e) {
+    async function sendToEmail(e) {
         e.preventDefault();
-
-        if(name === '' || email === '' || message === '') {
-            alert('Please fill in all the fields');
-            return;
-        }
-
+        
         const emailParameters = {
             from_name: name,
             message: message,
             email: email
         }
 
-        emailjs.send('service_mcog8yg', 'template_fnmoadf', emailParameters, 'OUCp05SWXVPkHeazD')
-        .then(() => {
-            setAlertMessage('Email sent')
-            alertBox.current.style.left = '0'
-            setName('')
-            setEmail('')
-            setMessage('')
+        try{ 
+            await emailjs.send('service_mcog8yg', 'template_fnmoadf', emailParameters, 'OUCp05SWXVPkHeazD');
+            setAlertMessage('Email sent');
+            alertSendEmail.current.style.left = '0';
+            setName('');
+            setEmail('');
+            setMessage('');
             return;
-        }, (err) => {
+            
+        } catch(err) {
             setAlertMessage('Error sending email. Please try again.')
-            alertBox.current.style.left = '0'
+            alertSendEmail.current.style.left = '0'
             console.log('Error sending email: ', err)
-        })
+        }
     }
 
     function copyEmail() {
         const emailAddress = emailAddressElement.current.innerHTML;
         navigator.clipboard.writeText(emailAddress).then(
             setAlertMessage('Copied to clipboard'),
-            alertBox.current.style.left = '0'
+            alertCopyEmail.current.style.left = '0'
             )
     }
 
-    function closeAlert() {
-        alertBox.current.style.left = '-150%';
+    function closeAlertSendEmail() {
+        alertSendEmail.current.style.left = '-150%';
+    }
+
+    function closeAlertCopyEmail() {
+        alertCopyEmail.current.style.left = '-150%';
     }
 
     return(
@@ -67,11 +68,11 @@ export const ContactMe = () => {
                         <li className='contact-option'>
                             <MdOutlineMarkEmailUnread className='contact-icon' />
                             <p className='contact-description' title='copy email address' onClick={copyEmail} ref={emailAddressElement} >janaina.marostegadejesus@gmail.com</p>
-                            <div ref={alertBox} className='custom-alert-container'>
+                            <div ref={alertCopyEmail} className='custom-alert-container'>
                                 <div className='custom-alert'>
                                     <p>{alertMessage}</p>
                                     <hr className='alert-box-line' />
-                                    <button onClick={closeAlert} className='close-custom-alert'>close</button>
+                                    <button onClick={closeAlertCopyEmail} className='close-custom-alert'>close</button>
                                 </div>
                                 
                             </div>
@@ -133,11 +134,11 @@ export const ContactMe = () => {
                             <StyledKeyButton className='submit-form-button' type='submit'>Send <FiSend /></StyledKeyButton>
                         </div>
 
-                        <div ref={alertBox} className='custom-alert-container'>
+                        <div ref={alertSendEmail} className='custom-alert-container'>
                             <div className='custom-alert'>
                                 <p>{alertMessage}</p>
                                 <hr className='alert-box-line' />
-                                <button onClick={closeAlert} className='close-custom-alert'>close</button>
+                                <button onClick={closeAlertSendEmail} className='close-custom-alert'>close</button>
                             </div>
                         </div>
                 </form>
