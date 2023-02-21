@@ -21,7 +21,7 @@ export const theme = {
         tertiaryLightShade: '#f5f5f7',
 
         complementary: 'rgba(118, 187, 191, 01)',
-        complementarySaturated: 'rgba(118, 208, 208, 1)',
+        complementarySaturated: '#A1FCFF',
         complementaryContrast: '#FFB973',
     },
 
