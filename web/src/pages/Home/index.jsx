@@ -34,8 +34,8 @@ export function Home() {
             <MenuMobile />
           </header>
 
-          <main data-aos='fade-up'>
-            <section id='introduction' className='main-sections introduction-section'>
+          <main>
+            <section id='introduction' className='main-sections introduction-section' data-aos='fade-up'>
               <Introduction />
             </section>
 
