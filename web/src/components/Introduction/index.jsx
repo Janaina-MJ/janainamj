@@ -33,7 +33,7 @@ export function Introduction() {
                 <StyledLetter speed={9}>r</StyledLetter>
                 <StyledLetter speed={14}>.</StyledLetter>
             </h1>
-            <p className='introduction-phrase'>Exploring the world of tech one byte at a time.</p>
+            <p className='introduction-phrase'>Transforming digital ideas into stunning web solutions.</p>
             <StyledKeyButton className='linkedin-button'><a href="https://www.linkedin.com/in/janaina-mj/" target='_blank'>LinkedIn</a></StyledKeyButton>
         </StyledIntroduction>
     )
