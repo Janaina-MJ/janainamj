@@ -64,6 +64,7 @@ export const StyledIntroduction = styled.div`
     @media(min-width: 992px) {
         .title-container {
             line-height: 8rem;
+            margin-bottom: 8px;
         }
     }
 `
