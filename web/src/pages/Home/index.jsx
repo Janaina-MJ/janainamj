@@ -11,8 +11,16 @@ import { Projects } from '../../components/Portfolio';
 import { Skills } from '../../components/Skills';
 import { ContactMe } from '../../components/ContactMe';
 import { Footer } from '../../components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export function Home() {
+
+  useEffect(()=>{
+    AOS.init({duration: 2000});
+  }, []);
+
   return (
     <ThemeProvider theme = {theme}>
       <>
@@ -26,7 +34,7 @@ export function Home() {
             <MenuMobile />
           </header>
 
-          <main>
+          <main data-aos='fade-up'>
             <section id='introduction' className='main-sections introduction-section'>
               <Introduction />
             </section>
