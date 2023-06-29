@@ -76,7 +76,7 @@ export function Projects() {
 
                 <Card 
                     projectName={ 'Attendance Register ⚠️ under development'}
-                    descriptionOfProject={'This is an Attendance Register tool. It is still under development to create a page with a form in which the information will be stored in a database to be used to feed the information on the main page. The project is being made to improve my skills with css, JavaScript and React.js and database.'} 
+                    descriptionOfProject={'This is an Attendance Register tool. It is still under development to create a page with a form in which the information will be stored in a database to be used to feed the information on the main page. The project is being made to improve my skills with css, JavaScript, React.js and database.'} 
                     deployUrl={'https://attendance-register.vercel.app'}
                     githubRepo={'https://github.com/Janaina-MJ/attendance-register.git'}
                     technologyUsedOnProject={[['https://axios-http.com/docs/intro', 'Axios'], ['https://www.prisma.io', 'Prisma'], ['https://developer.mozilla.org/https://nodejs.org/en/', 'Node.js'], ['https://expressjs.com', 'Express.js'],['https://vuejs.org', 'Vue.js'], ['https://reactjs.org', 'React.js'], ['https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'Javascript'], ['https://developer.mozilla.org/en-US/docs/Web/HTML', 'HTML'], ['https://developer.mozilla.org/en-US/docs/Web/CSS', 'CSS']]}
