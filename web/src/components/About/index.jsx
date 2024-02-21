@@ -12,10 +12,10 @@ export function About() {
             <div className='about-me-container'>
                 <section className='profile'>
                     <p className='about-me-text'>
-                        <BrushedLetters text={`I am a dedicated technology enthusiast. Although I had my first taste of programming in high school and found it captivating, it was in 2021 that I decided to make a career transition and focus on studying web development. Since then, I have been actively working on personal projects to practice what I've learned.`}></BrushedLetters>
+                        <BrushedLetters text={`I am a Web Developer with experience creating impactful and user-friendly web applications, utilizing modern tools and technologies such as React, Next, Typescript and TailwindCSS.`}></BrushedLetters>
                     </p>
                     <p className='about-me-text'>
-                        <BrushedLetters text={`Through this process, I've gained a better understanding of the fundamentals of frontend and backend development, and learned about the use of modern technologies. I've also developed problem-solving skills, practiced versioning with Git and GitHub, and focused on responsive design and web accessibility.`}></BrushedLetters>
+                        <BrushedLetters text={`I have contributed to projects within the financial market and data-driven football analysis, demonstrating skills in data fetching, manipulation of large datasets and experience with responsive design, code version control, software Architecture principles and performance optimization. I am always looking for new challenges and believe in the power of continuous learning.`}></BrushedLetters>
                     </p>
                     
                 </section>

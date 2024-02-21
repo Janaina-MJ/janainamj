@@ -25,7 +25,7 @@ export const StyledAbout = styled.article`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 65px;
+        gap: 45px;
     }
 
     .about-me-text {
