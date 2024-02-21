@@ -20,10 +20,11 @@ export function Projects() {
         <StyledProjects>
             <div className='featured-project'>
                 <div className='project-view'>
-                    <h4>Got a Plan - Travel Planner Web App</h4>
-                    <div className='featured-project-img'></div>
-                    <p>Are you planning a trip for the next year but unsure if you'll be able to do all the activities you want because of unpredictable weather? With Got a Plan, you can get the most accurate weather forecast for your upcoming trip, <strong>whether you're leaving in a week or months ahead</strong>. If the trip is within a week, you will receive the current weather forecast. If the trip is further out, you will receive a predicted forecast, so you can choose the best date for your trip, event or day out. </p>
-                    <p>Got a Plan is a SPA (Single Page Application) developed by me using several tools and packages. It also has a Jest testing unit and the functionalities were built modularly allowing for better maintenance.</p>
+                    <div className='featured-project-img'>
+                        <h5>GOT A PLAN - Travel Planner Web App</h5>
+                    </div>
+                    <p>Got a Plan is a SPA (Single Page Application) designed to assist users in planning trips by providing accurate weather forecasts. The application caters to both short-term and long-term trip planning needs, offering current weather forecasts for trips within a week and predicted forecasts for those scheduled further in advance. This feature allows users to make informed decisions and select the optimal date for their trips, events, or outings.</p>
+                    <p>Developed by me using several tools and packages, this project also has a Jest testing unit and the functionalities were built modularly allowing for better maintenance.</p>
                     <strong>Deploy:</strong> <a href="https://gotaplan.onrender.com" target='_blank' > check it out! </a> <br />
                     <strong>Github repository:</strong> <a href="https://github.com/Janaina-MJ/FEND-Capstone-travel-app.git" target='_blank' > check the code here! </a> <br/ >
                     <ul className='tech-stack'>

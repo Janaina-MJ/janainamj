@@ -16,20 +16,25 @@ export const StyledProjects = styled.div`
 
     .project-view {
         width: 100%;
-        background-color: ${({ theme }) => theme.colors.secondaryTransparent};
+        background: linear-gradient(to bottom, ${({ theme }) => theme.colors.secondaryTransparent}, ${({ theme }) => theme.colors.secondaryTransparent}, transparent);
         border-radius: 15px;
-        padding: 20px 10px;
+        padding: 5px 5px;
         margin-top: 20px;
     }
 
     .featured-project-img {
-        width: 95%;
-        min-height: 190px;
-        margin: 20px auto;
+        width: 100%;
+        min-height: 50px;
+        margin: 10px auto;
         border-radius: 5px;
-        background-image: url(${weather});
+        //background-image: url(${weather});
+        //background: ${({ theme }) => theme.colors.tertiaryBlack};
         background-size: cover;
         background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         //animation: light-up 3s linear infinite ;
     }
 
@@ -43,6 +48,14 @@ export const StyledProjects = styled.div`
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 20px;
+    }
+
+    .project-view * {
+        font-size: 1.4rem;
+    }
+
+    .featured-project-img h5 {
+        font-size: 1.6rem;
     }
 
     ul li {
@@ -109,6 +122,7 @@ export const StyledProjects = styled.div`
 
     .mobile-screen {
         position: absolute;
+        background-color: black;
         height: 568px;
         width: 297px;
         top: 15px;
@@ -175,6 +189,7 @@ export const StyledProjects = styled.div`
         .project-view {
             width: 50%;
             height: 100%;
+            padding: 10px 20px;
         }
 
         .mobile-container {
