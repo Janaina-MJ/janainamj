@@ -59,7 +59,7 @@ export const StyledCard = styled.div`
    .project-details {
         width: 85vw;
         //height: auto;
-        background-color: ${({ theme }) => theme.colors.tertiaryBlack};
+        background-color: rgb(21,26,28);
         border-radius: 10px;
         padding: 20px;
         position: relative;
