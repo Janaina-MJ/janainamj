@@ -28,12 +28,12 @@ export function Skills() {
             <div className='skills-container'>
 
                 <div className={isHardSkills? 'hard-skills displayFlex' : 'hard-skills displayNone'} >
-                    <StyledSkillCard speed={25} >
+                    <StyledSkillCard speed={14} >
                         <FaReact className='skill-icon' />
                         <p> React</p>
                     </StyledSkillCard>
 
-                    <StyledSkillCard speed={25} >
+                    <StyledSkillCard speed={8} >
                         <SiTypescript className='skill-icon' />
                         <p> Typescript</p>
                     </StyledSkillCard>
@@ -43,7 +43,7 @@ export function Skills() {
                         <p> Next</p>
                     </StyledSkillCard>
                     
-                    <StyledSkillCard speed={25} >
+                    <StyledSkillCard speed={11} >
                         <SiTailwindcss className='skill-icon' />
                         <p> TailwindCSS</p>
                     </StyledSkillCard>
@@ -91,7 +91,7 @@ export function Skills() {
                 </div>
                
                <div className={isHardSkills? 'soft-skills displayNone' : 'soft-skills displayFlex'}>
-                    <StyledSkillCard speed={11} >
+                    <StyledSkillCard speed={8} >
                         <GiLoveMystery className='skill-icon' />
                         <p> Passion for coding</p>
                     </StyledSkillCard>
