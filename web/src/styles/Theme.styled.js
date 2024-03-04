@@ -1,28 +1,32 @@
 export const theme = {
     colors: {
+
+        //------------------------------------------START OF BACKGROUND------------------------------------------
         primaryDarkShade: '#000',
         primaryMediumShade: '#000001',
-        primaryLightShade: '#192f50',
+        primaryLightShade: '#26373c',
 
-        secondaryDarkShade: '#396F80',
-        secondaryMediumShade: '#5DC8E8',
+        secondaryLightShade: '#90abb4',
+        secondaryMediumShade: '#A1FCFF',
+        //------------------------------------------END OF BACKGROUND------------------------------------------
 
-        secondaryLightShade: '#72deff',
-        secondaryLightTransparent: 'rgba(142, 219, 251, 0.8)',
+        
+        secondaryDarkShade: 'rgba(98, 147, 164, 0.7)', //SHADOWS AND ALERT-BOX BORDER
+        secondaryLightTransparent: 'rgba(144, 171, 180, 0.9)', //SKILLS-BUTTONS SHADE
 
-        secondaryLightNeon: '#00F9FF',
-        secondaryTransparent: 'rgba(98, 147, 164, 0.3)',
+        secondaryLightNeon: '#A1FCFF', // HIGHLIGHTS
+        secondaryTransparent: 'rgba(98, 147, 164, 0.3)', //LIGHT BACKGROUNDS 
         secondaryFullColor: 'rgb(34, 45, 51)',
 
 
-        tertiaryBlack: 'rgba(0, 0, 0, 0.6)',
+        tertiaryBlack: 'rgba(0, 0, 0, 0.6)', //SHADE EFFECT BACKGROUND
         tertiaryDarkShade: '#454e50',
-        tertiaryMediumShade: '#8a9599',
+        tertiaryMediumShade: '#8a9599', //SECTIONS TITLES
         tertiaryLightShade: '#f5f5f7',
 
-        complementary: 'rgba(118, 187, 191, 01)',
-        complementarySaturated: '#A1FCFF',
-        complementaryContrast: '#FFB973',
+        complementary: 'rgba(118, 187, 191, 01)', //BUTTONS: HOVER EFFECT
+        complementarySaturated: '#90abb4', //BUTTONS
+        complementaryContrast: '#CCCCCC', //LINKS
     },
 
     typography: {
