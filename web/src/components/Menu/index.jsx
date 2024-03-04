@@ -1,13 +1,13 @@
 import { StyledMenu } from './Menu.styled';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import logoBw from '../../assets/logoBw.svg';
+import logoBlueish from '../../assets/logoBlueish.png';
 
 export function Menu() {
   
   return (
     <StyledMenu>
 
-        <a href='#introduction' className='logo'><img src={logoBw} alt='J' /></a>
+        <a href='#introduction' className='logo'><img src={logoBlueish} alt='J' /></a>
 
         <nav>
             <ul>

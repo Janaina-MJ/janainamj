@@ -11,7 +11,7 @@ export const StyledMenu = styled.div`
         left: 0;
         width: 12vw;
         height: 100%;
-        border-right: 1px solid ${({ theme }) => theme.colors.primaryMediumShade};;
+        border-right: 1px solid ${({ theme }) => theme.colors.primaryMediumShade};
 
         display: flex;
         flex-direction: column;
@@ -30,12 +30,12 @@ export const StyledMenu = styled.div`
         .logo img {
             width: auto;
             height: 80px;
-            opacity: 0.5;
+            opacity: 0.99;
             transition: 0.2s;
 
             :hover {
                 transform: scale(1.3);
-                opacity: 0.7;
+                opacity: 0.9;
             }
         }
 
