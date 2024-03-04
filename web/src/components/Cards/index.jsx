@@ -36,7 +36,7 @@ export const Card = ({ projectImgLogo, projectImgMobile, projectName, descriptio
                 <div className='project-details' >
                     <MdClose className='closeButton' onClick={closeProjectDetails} />
                     <div className='project-container'>
-                        <img className='project-cover' src={projectImgDesktop} alt="" />
+                        <div className='project-cover' style={{ background: `url(${projectImgDesktop})`, backgroundSize: 'cover' }} ></div>
                         <div className='project-info' >
                             <h6>{projectName} </h6>
                             <strong>Deploy:</strong> <a href={deployUrl} target='_blank' > check it out! </a> <br />

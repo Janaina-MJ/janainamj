@@ -50,6 +50,7 @@ export const StyledCard = styled.div`
         width: 140px;
         height: 140px;
         border-radius: 50%;
+        filter: grayscale(100%);
     }
 
    .project-img-display {
@@ -68,6 +69,10 @@ export const StyledCard = styled.div`
         display: flex;
         flex-direction: column;
         position: relative;
+   }
+
+   .project-details * {
+        font-size: 1.4rem;
    }
 
    .closeButton {
@@ -90,8 +95,7 @@ export const StyledCard = styled.div`
 
    .project-cover {
         width: 100%;
-        max-width: 350px;
-        height: auto;
+        height: 180px;
         border-radius: 5px;
         align-self: center;
    }
@@ -164,25 +168,7 @@ export const StyledCard = styled.div`
     @media(min-width: 992px) {
 
         .project-details {
-            width: 560px;
-        }
-        
-        .project-cover {
-            align-self: flex-start;
-            width: 50%;
-            
-        }
-
-        .project-container{
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-
-        .project-info {
-            padding-left: 10px;
-            margin: 0 0 10px;
+            width: 500px;
         }
     }
 
