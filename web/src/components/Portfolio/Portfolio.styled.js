@@ -16,7 +16,7 @@ export const StyledProjects = styled.div`
 
     .project-view {
         width: 100%;
-        background: linear-gradient(to bottom, ${({ theme }) => theme.colors.secondaryTransparent}, ${({ theme }) => theme.colors.secondaryTransparent}, transparent);
+        background: linear-gradient(to top, ${({ theme }) => theme.colors.secondaryTransparent}, ${({ theme }) => theme.colors.secondaryTransparent}, ${({ theme }) => theme.colors.tertiaryBlack});
         border-radius: 15px;
         padding: 5px 5px;
         margin-top: 20px;
